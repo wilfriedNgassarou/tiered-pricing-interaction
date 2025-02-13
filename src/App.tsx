@@ -1,6 +1,7 @@
 import NumberFlow from "@number-flow/react"
 import { motion } from "motion/react"
 import { useState } from "react"
+import { Credits } from "./components/credits"
 
 function App() {
   const [activePeriod, setActivePeriod] = useState('monthly')
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <section className="w-full h-dvh flex justify-center items-center">
+      <Credits />
       <section className="w-80 md:w-96 flex flex-col gap-3 p-3 rounded-3xl border-2 border-gray-200">
         <div 
           className="w-full h-12 flex font-medium rounded-full bg-gray-200 cursor-default"
